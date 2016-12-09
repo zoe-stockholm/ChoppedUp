@@ -25,3 +25,6 @@ class QuestionAndAnswer(models.Model):
     def __str__(self):
         return 'Q: {}. A: {}'.format(self.question, self.answer)
 
+    def to_dict(self):
+        return {self.answer: self.question}
+
