@@ -11,7 +11,7 @@ class QuestionAndAnswersInline(admin.TabularInline):
 class QuestionAndAnswerAdmin(admin.ModelAdmin):
     list_display = ['answer', 'updated', 'created', 'topic', 'enabled']
     list_filter = ['enabled', 'topic']
-    search_fields = ['topic', 'answer']
+    search_fields = ['answer']
     actions = ['mark_as_enable', 'mark_as_disable']
 
     def mark_as_enable(self, request, queryset):
@@ -26,6 +26,7 @@ class QuestionAndAnswerAdmin(admin.ModelAdmin):
 
 class TopicAdmin(admin.ModelAdmin):
     list_display = ['topic']
+    search_fields = ['topic']
 
     inlines = [QuestionAndAnswersInline]
 
