@@ -5,19 +5,19 @@ using django for game content management.
 
 
 
-Features:
+# Features:
 
 On admin page, administrator has access to add/edit/disable/enable content for client side.
 
 
 
-Requirements:
+# Requirements:
 
 Django 1.10.4, and Python 3.5
 
 
 
-Quick Start: Test on your local:
+# Quick Start: Test on your local:
 
 $ git clone git@github.com:zoe-stockholm/ChoppedUp.git
 $ pip install --upgrade virtualenv
