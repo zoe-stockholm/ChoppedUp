@@ -1,0 +1,11 @@
+*.pyc
+*~
+*.swp
+
+.project
+.pydevproject
+lib/*
+.idea/
+.Python
+.DS_Store
+app/.DS_Store
